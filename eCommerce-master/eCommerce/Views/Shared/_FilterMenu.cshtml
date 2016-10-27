@@ -1,0 +1,21 @@
+﻿<div class="product-filter">
+
+    @using (Html.BeginForm("ViewAll", "Products", FormMethod.Get, new { @class = "form-group" }))
+    {
+        @Html.DropDownList("CategoryID", @ViewBag.CategoryID as SelectList, "Select a Category", new { @class = "form-control inline" })
+
+        @Html.DropDownList("SortOrder", new List<SelectListItem>
+        {
+            new SelectListItem{ Text = "Name", Value = "name_asc" },
+            new SelectListItem{ Text = "Price (High-Low)", Value = "price_desc" },
+            new SelectListItem{ Text = "Price (Low-High)", Value = "price_asc" }
+        }, "Most Recent", new { @class = "form-control inline" })
+
+        <div class="navbar-right">
+            @Html.TextBox("SearchString", null, new { @class = "form-control", @placeholder = "search" })
+            <br>
+            <input class="btn btn-default navbar-right" type="submit" value="Filter" />
+        </div>
+    }
+
+</div>

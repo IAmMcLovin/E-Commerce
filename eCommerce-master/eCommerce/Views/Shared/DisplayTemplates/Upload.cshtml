@@ -1,0 +1,5 @@
+﻿@model string
+@if (!string.IsNullOrEmpty(@Model))
+{
+    <img src="/Upload/@Model" alt="@Model" height="32" width="32">
+}

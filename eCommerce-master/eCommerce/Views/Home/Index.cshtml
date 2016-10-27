@@ -1,0 +1,20 @@
+﻿@model IEnumerable<eCommerce.Models.Product>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+
+    <div class="carousel-container">
+        @Html.Partial("_ProductCarousel")
+    </div>
+
+    <div class="product-container">
+        <h1>Newest Offerings</h1>
+        @foreach (var product in Model)
+        {
+            @Html.DisplayFor(m => product)
+        }
+    </div>
+
+</div>

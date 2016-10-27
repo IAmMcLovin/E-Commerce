@@ -1,0 +1,85 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+.clear {
+    clear:both;
+}
+
+
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+.inline {
+    display: inline;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* Carousel */
+.carousel-image {
+    margin: auto;
+}
+
+/* Product Page */
+.product-container {
+    padding-top:60px;
+}
+
+/* Product Boxes */
+.product-wrapper {
+    height:420px;
+}
+
+.product-image {
+    max-height: 100%;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.product-image-helper {
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.product-image-wrapper {
+   width: 250px;
+   height: 250px;
+   border: 1px solid #eae9e9;
+   margin: auto;
+   overflow: hidden;
+}
+
+.product-title {
+    font-family: 'Franklin Gothic Medium'; 
+}
+
+.product-description {
+    font-family: 'Lucida Sans';
+}
+
+.product-price {
+    font-family: "Lucida Console";   
+}
+
+.divider {
+    border-color: #BBB;
+    margin-bottom: 5px;
+}

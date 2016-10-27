@@ -1,0 +1,17 @@
+﻿@model IEnumerable<eCommerce.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@Html.Partial("_FilterMenu")
+
+<div class="product-container">
+    @foreach (var product in Model)
+    {
+        @Html.DisplayFor(m => product)
+    }
+    <div class="clear"></div>
+</div>
+
+
